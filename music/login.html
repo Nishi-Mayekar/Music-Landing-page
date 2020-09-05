@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+<div class="modal"> 
+  <span onclick="parent.location='./index.html'" class="close" title="Close Modal">&times;</span>
+    <form class="modal-content" action="/action_page.php">
+    <div class="container">
+      <h1>Login</h1>
+      <p>Fill the details to login</p>
+      <hr>
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+
+      <label>
+        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+      </label>
+
+      <p><a href="#" style="color:dodgerblue">Forgot Password</a></p>
+
+      <div class="clearfix">
+        <button type="button" onclick="parent.location='./login.html'" class="loginbtn">Login</button>
+        <button type="submit" onclick="parent.location='./signup.html'" class="signupbtn">Sign Up</button>
+      </div>
+    </div>
+  </form>
+</div>
+
+</body>
+</html>
